@@ -22,19 +22,23 @@
       <h2>Remote Server Settings</h2>
       <div class="setting top">
         <h5 class="settingName ">Hostname</h5>
-        <input type="text" class="setting" name="hostname" placeholder="Server Hostname">
+        <input type="text" class="setting" name="hostname" placeholder="Server Hostname" id="hstnm">
       </div>
       <div class="setting">
         <h5 class="settingName">Port</h5>
-        <input type="text" class="setting" name="port" placeholder="Server Port">
+        <input type="text" class="setting" name="port" placeholder="Server Port" id="hstp">
       </div>
       <div class="setting">
         <h5 class="settingName">Rcon Port</h5>
-        <input type="text" class="setting" name="rconport" placeholder="RCON port">
+        <input type="text" class="setting" name="rconport" placeholder="RCON port" id="rcp">
       </div>
       <div class="setting">
         <h5 class="settingName">Rcon Password</h5>
-        <input type="text" class="setting" name="rconpass" placeholder="RCON password">
+        <input type="text" class="setting" name="rconpass" placeholder="RCON password" id="rcpp">
+      </div>
+      <div class="setting">
+        <h5 class="settingName">Whitelist/Blacklist handler Port</h5>
+        <input type="text" class="setting" name="rconpass" placeholder="Handler Port" id="whtlstp">
       </div>
       <input type="button" id="apply" value="Apply Changes">
     </div>
@@ -43,8 +47,6 @@
 
     
   </body>
+  <script src="assets/js/renderer.js"></script>
   <script src="assets/js/settings.js"></script>
-  <script>
-    window.electronAPI.bruh()
-  </script>
 </html>

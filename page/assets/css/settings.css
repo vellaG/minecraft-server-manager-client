@@ -44,9 +44,15 @@ h2 {
     background-color: #30144f; 
     color: white;
     font-size: small;
+    transition: 100ms;
+}
+
+.setting>input:hover {
+    background-color: #5d0d7a;
 }
 .setting>input:focus {
-    background-color: #660b87;;
+    background-color: #660b87;
+    outline: none;
 }
 .setting>input::placeholder {
     color: white;
