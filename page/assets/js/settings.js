@@ -1,0 +1,1 @@
+document.getElementById("balls").innerText = "ur mom"

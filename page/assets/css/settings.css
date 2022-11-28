@@ -1,0 +1,79 @@
+#settingsContainer {
+    position: absolute;
+    width: 80%;
+    height: fit-content;
+    margin-left: 133px;
+    margin-top: 0;
+    padding-top: 0;
+   
+}
+
+.blocks {
+    display: inline-block;
+}
+
+.top {
+    border-top: 1px solid #f6ebf4;
+}
+.settingName {
+    width: 100px;
+    margin: 0;
+    padding: 15px;
+
+}
+.setting {
+    border-bottom: 1px solid #fefefe;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+h2 {
+    text-align: center;
+    color: #f6ebf4;
+}
+
+
+.setting>input {
+    height: 25px;
+    margin-left: 50%;
+    border-radius: 25px;
+    border: none;
+    padding-left: 10px;
+    background-color: #30144f; 
+    color: white;
+    font-size: small;
+}
+.setting>input:focus {
+    background-color: #660b87;;
+}
+.setting>input::placeholder {
+    color: white;
+    opacity: .7;
+    
+}
+
+#apply {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 25px;
+    height: 25px;
+    background-color: #570f71;
+    color: rgb(192, 192, 192);
+    transition:200ms;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+#apply:hover {
+    background-color: #832da2;
+}
+
+#apply:active {
+    background-color: #302136;
+}

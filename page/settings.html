@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minecraft Manager Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+  </head>
+  <body>
+    <div class="blocks" id="navbar">
+      <a class="navoption active" href="settings.html">Settings</a>
+      <a class="navoption" href="players.html">Players Online</a>
+      <a class="navoption" href="banlist.html">Banlist</a>
+      <a class="navoption" href="whitelist.html">Whitelist<a>
+      <a class="navoption" href="whitelist.html">Rcon<a>
+    </div>
+
+    <div class="blocks" id="settingsContainer">
+      <h2>Remote Server Settings</h2>
+      <div class="setting top">
+        <h5 class="settingName ">Hostname</h5>
+        <input type="text" class="setting" name="hostname" placeholder="Server Hostname">
+      </div>
+      <div class="setting">
+        <h5 class="settingName">Port</h5>
+        <input type="text" class="setting" name="port" placeholder="Server Port">
+      </div>
+      <div class="setting">
+        <h5 class="settingName">Rcon Port</h5>
+        <input type="text" class="setting" name="rconport" placeholder="RCON port">
+      </div>
+      <div class="setting">
+        <h5 class="settingName">Rcon Password</h5>
+        <input type="text" class="setting" name="rconpass" placeholder="RCON password">
+      </div>
+      <input type="button" id="apply" value="Apply Changes">
+    </div>
+    
+
+
+    
+  </body>
+  <script src="assets/js/settings.js"></script>
+</html>
