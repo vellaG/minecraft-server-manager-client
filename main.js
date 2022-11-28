@@ -27,7 +27,7 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow()
-})
+
 
 //Handle set ports and hostname data
 ipcMain.on('applyChanges',(even,data)=>{
@@ -37,4 +37,18 @@ ipcMain.on('applyChanges',(even,data)=>{
   rconpass = data.rconpass
   whitelistServerPort = data.whitelistHandlerPort
   
+})
+
+//send settings back to client
+ipcMain.handle('hostsettings', ()=>{
+  return {
+    hostname: hostname,
+    port: port,
+    rconPort: rconport,
+    rconpass: rconpass,
+    whitelistHandlerPort: whitelistServerPort
+  }
+})
+
+
 })

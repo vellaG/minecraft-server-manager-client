@@ -13,21 +13,21 @@
     <div id="navbar">
       <a class="navoption" href="settings.html">Settings</a>
       <a class="navoption active" href="players.html">Players Online</a>
-      <a class="navoption" href="banlist.html">Banlist</a>
-      <a class="navoption" href="whitelist.html">Whitelist<a>
+  
       <a class="navoption" href="rcon.html">Rcon<a>
 
     </div>
 
-    <div class="blocks" id="playerContainer">
-      <h2>Currently Online Players</h2>
-      <div class="playercell">
-        <img height="45px" width="45px">
-        <h5 class="playername">Name</h5>
+    <div class="blocks" id="playerContainerdiv">
+      <h2 id="PlayerCount">Players Online</h2>
+      <h4 id="noPlayers">No players currently online</h2>
+      <div id="playerContainer">
       </div>
+       
     </div>
 
     
   </body>
   <script src="assets/js/players.js"></script>
+  <script src="assets/js/autoreload.js"></script>
 </html>

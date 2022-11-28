@@ -1,4 +1,4 @@
-#playerContainer {
+#playerContainerdiv {
     position: absolute;
     width: 80%;
     height: fit-content;
@@ -7,6 +7,26 @@
     padding-top: 0;
 }
 
+#playerContainer {
+    background-color: rgb(112, 57, 166);
+    height: 450px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: rgb(42, 32, 44);
+    visibility: visible;
+}
+::-webkit-scrollbar-track {
+    background: rgb(127, 78, 175);
+}
+
+
 .playercell {
 display: flex;
 flex-direction: row;
@@ -14,6 +34,11 @@ align-items: center;
 background-color: #331455;
 padding: 5px;
 margin-top: 5px;
+box-shadow: 1px 1px 1px black;
+}
+
+.playercell:hover {
+    background-color: #481e76;
 }
 
 .playername {
