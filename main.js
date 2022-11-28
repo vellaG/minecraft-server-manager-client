@@ -8,6 +8,8 @@ var rconport;
 var rconpass;
 var whitelistServerPort;
 
+
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
@@ -34,6 +36,5 @@ ipcMain.on('applyChanges',(even,data)=>{
   rconport = data.rconPort
   rconpass = data.rconpass
   whitelistServerPort = data.whitelistHandlerPort
-  console.log(hostname,port,rconport,rconpass,whitelistServerPort) 
   
 })

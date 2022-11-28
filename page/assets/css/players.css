@@ -1,0 +1,21 @@
+#playerContainer {
+    position: absolute;
+    width: 80%;
+    height: fit-content;
+    margin-left: 133px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.playercell {
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color: #331455;
+padding: 5px;
+margin-top: 5px;
+}
+
+.playername {
+    padding-left: 15px;
+}
