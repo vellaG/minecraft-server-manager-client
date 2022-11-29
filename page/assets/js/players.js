@@ -1,7 +1,8 @@
 
 //handle inability to retrieve players
 function failPlayerRetrieve() {
-
+    document.getElementById('noPlayers').innerText = "Cannot Connect to Server"
+    document.getElementById('noPlayers').style.color = "red"
 }
 
 //makeplayercell
@@ -45,10 +46,11 @@ fetch('https://api.mcsrvstat.us/2/'+dat.hostname+":"+dat.port, {cache:'no-store'
 
     }else {
         document.getElementById('noPlayers').innerText = "Cannot Connect to Server"
+        document.getElementById('noPlayers').style.color = "red"
         failPlayerRetrieve()
     }
 })).catch(err=>{
-    
+    console.error(err)
 })
 
 

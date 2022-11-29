@@ -9,7 +9,7 @@
 
 #playerContainer {
     background-color: rgb(112, 57, 166);
-    height: 450px;
+    height: 400px;
     overflow-y: scroll;
     padding: 5px;
 }
