@@ -13,6 +13,7 @@
     "electron": "^21.3.1"
   },
   "dependencies": {
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "rcon": "^1.1.0"
   }
 }

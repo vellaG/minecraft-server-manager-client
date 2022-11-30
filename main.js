@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require("path")
+const rcon = require("rcon")
 
 //variable hostname, port, rcon port, rcon password to be set
 var hostname;
@@ -23,11 +24,13 @@ const createWindow = () => {
     }
   })
   win.loadFile('./page/settings.html')
+
+  return win;
 }
 
 app.whenReady().then(() => {
-  createWindow()
-
+  const win = createWindow()
+ 
 
 //Handle set ports and hostname data
 ipcMain.on('applyChanges',(even,data)=>{
@@ -36,7 +39,8 @@ ipcMain.on('applyChanges',(even,data)=>{
   rconport = data.rconPort
   rconpass = data.rconpass
   whitelistServerPort = data.whitelistHandlerPort
-  
+ 
+
 })
 
 //send settings back to client
@@ -50,5 +54,12 @@ ipcMain.handle('hostsettings', ()=>{
   }
 })
 
+//handle input from rcon
+ipcMain.on('rconInput',(event,message)=>{
+ 
+  win.webContents.send('rconOutput', message)
+})
+
 
 })
+

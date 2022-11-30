@@ -53,8 +53,5 @@ fetch('https://api.mcsrvstat.us/2/'+dat.hostname+":"+dat.port, {cache:'no-store'
     console.error(err)
 })
 
-
-
-
-
 })
+

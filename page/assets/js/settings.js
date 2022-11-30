@@ -20,3 +20,4 @@ document.getElementById("apply").onmouseup = ()=>{
         rconpass: rconpass.value
     })
 }
+

@@ -10,7 +10,6 @@
     width: 620px;
     padding: 2px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
     overflow-y:scroll;
 }
 ::-webkit-scrollbar-track {
@@ -43,5 +42,6 @@
 }
 
 .rcontext {
-    margin:10px
+    margin:10px;
+    font-size: medium;
 }

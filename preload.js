@@ -7,6 +7,14 @@ contextBridge.exposeInMainWorld("settingApi", {
     retrieveSettings: function() {
         return ipcRenderer.invoke('hostsettings')
     }
-    
 });
+
+contextBridge.exposeInMainWorld('rconApi', {
+    handleRconMessage: function(callback) {
+        ipcRenderer.on('rconOutput', callback)
+    },
+    sendRconCommand: function(message) {
+        ipcRenderer.send('rconInput',message)
+    }
+})
 
